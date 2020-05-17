@@ -1,0 +1,83 @@
+﻿{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "조건별 검색 (평균 연봉 또는 직업전망을 필수로 선택해 주세요)",
+      "spacing": "ExtraLarge",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "text": "(평균 연봉 또는 직업전망을 필수로 선택해 주세요)"
+    },
+    {
+      "type": "TextBlock",
+      "text": "평균 연봉"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "avgSal",
+      "placeholder": "평균 연봉",
+      "choices": [
+        {
+          "title": "3,000만원 미만",
+          "value": "1"
+        },
+        {
+          "title": "3,000만원~4,000만원",
+          "value": "2"
+        },
+        {
+          "title": "4,0000만원~5,0000만원",
+          "value": "3"
+        },
+        {
+          "title": "5,0000만원 이상",
+          "value": "4"
+        }
+      ],
+      "style": "expanded",
+      "title": "평균 연봉",
+      "wrap": true,
+      "separator": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "TextBlock",
+      "text": "직업 전망"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "placeholder": "Placeholder text",
+      "choices": [
+        {
+          "title": "매우밝음(상위 10%이상)",
+          "value": "74.2"
+        },
+        {
+          "title": "밝음(상위 20%이상)",
+          "value": "63.3"
+        },
+        {
+          "title": "보통(중간이상)",
+          "value": "40.0"
+        },
+        {
+          "title": "전망안좋음(감소예상직업)",
+          "value": "60.0"
+        }
+      ],
+      "style": "expanded",
+      "id": "prospect"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "검색"
+    }
+  ]
+}

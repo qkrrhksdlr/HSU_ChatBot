@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "키워드검색"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "키워드를 입력하세요",
+      "id": "keyword"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "검색",
+      "data": {
+        "searchType": "K"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "학교 시스템 로그인",
+      "size": "Large",
+      "weight": "Bolder",
+      "color": "Accent"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "100px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "학번",
+              "horizontalAlignment": "Center"
+            }
+          ],
+          "verticalContentAlignment": "Center"
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Text",
+              "id": "userId"
+            }
+          ],
+          "verticalContentAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "100px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "비밀번호",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Text",
+              "id": "userPass"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "로그인"
+    }
+  ]
+}
